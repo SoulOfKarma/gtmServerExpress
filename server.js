@@ -294,7 +294,7 @@ app.put('/activarDesactivarPersona', bodyParser.json(), (req, res) => {
   });
 });
 
-const port = process.env.VITE_PORT || 3000
+const port = process.env.VITE_PORT || 8080
 
     app.listen(port, (err, res) => {
         if (err) {
