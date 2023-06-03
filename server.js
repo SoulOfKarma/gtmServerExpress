@@ -18,8 +18,7 @@ app.use(cors({
   host: process.env.HOST,
   user: process.env.USER,
   password: process.env.PASSWORD,
-  database: process.env.DATABASE,
-  ssl: false
+  database: process.env.DATABASE
 }); 
 
 connection.connect((err) => {
@@ -33,7 +32,7 @@ connection.connect((err) => {
 //Gets API
 
 app.get('/', (req, res) => {
-  res.send('Express JS on Vercel' + process.env.HOST)
+  res.send('Express JS on Vercel')
 })
 
 app.get('/familiaMascota', (req, res) => {
