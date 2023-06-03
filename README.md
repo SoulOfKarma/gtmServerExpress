@@ -10,7 +10,7 @@ Lenguajes Utilizados:
 - MySql(SQL)
 
 Dependencias:
--Cors
--Express Js.
--Mysql 
--dotenv(Para el uso de Variables de entorno)
+- Cors
+- Express Js.
+- Mysql 
+- dotenv(Para el uso de Variables de entorno)
