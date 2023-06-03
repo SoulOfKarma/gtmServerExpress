@@ -294,7 +294,7 @@ app.put('/activarDesactivarPersona', bodyParser.json(), (req, res) => {
   });
 });
 
-/* const port = process.env.VITE_PORT || 3000
+const port = process.env.VITE_PORT || 3000
 
     app.listen(port, (err, res) => {
         if (err) {
@@ -303,7 +303,7 @@ app.put('/activarDesactivarPersona', bodyParser.json(), (req, res) => {
         } else {
             console.log('[INFO] Server Running on port:', port)
         }
-    }) */
+    })
 
 //app.listen(5173);
 
