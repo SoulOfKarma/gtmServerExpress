@@ -8,15 +8,17 @@ const cors = require('cors');
 
 const bodyParser = require('body-parser')
 
+require('dotenv').config();
+
 app.use(cors({
   origin: ['http://localhost:5173', 'https://gtm-test-dusky.vercel.app']
 }));
 
  const connection = mysql.createConnection({
-  host: 'db4free.net',
-  user: 'gtmuser',
-  password: 'Darkzero25',
-  database: 'gtmdatabase'
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE
 }); 
 
 connection.connect((err) => {
@@ -294,7 +296,7 @@ app.put('/activarDesactivarPersona', bodyParser.json(), (req, res) => {
   });
 });
 
-const port = process.env.VITE_PORT || 8080
+const port = process.env.PORT || 3000
 
     app.listen(port, (err, res) => {
         if (err) {
