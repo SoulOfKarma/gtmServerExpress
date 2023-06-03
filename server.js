@@ -34,8 +34,7 @@ connection.connect((err) => {
 //Gets API
 
 app.get('/', (req, res) => {
-  res.send('Express JS on Vercel')
-  res.send(process.env.HOST)
+  res.send('Express JS on Vercel' + process.env.HOST)
 })
 
 app.get('/familiaMascota', (req, res) => {
