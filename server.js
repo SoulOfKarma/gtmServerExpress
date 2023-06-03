@@ -11,7 +11,7 @@ const bodyParser = require('body-parser')
 require('dotenv').config();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://gtm-test-dusky.vercel.app']
+  origin: ['http://localhost:5173', 'https://gtm-server-express.vercel.app/','https://gtm-test-dusky.vercel.app/']
 }));
 
  const connection = mysql.createConnection({
