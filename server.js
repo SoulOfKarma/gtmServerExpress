@@ -10,6 +10,8 @@ const bodyParser = require('body-parser')
 
 require('dotenv').config();
 
+console.log(process.env.HOST)
+
 app.use(cors({
   origin: ['http://localhost:5173', 'https://gtm-test-dusky.vercel.app']
 }));
